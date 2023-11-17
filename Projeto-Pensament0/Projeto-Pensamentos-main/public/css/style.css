@@ -1,0 +1,356 @@
+:root {
+  --backgroud: #1c1c1c;
+  --blue: #068fff;
+  --white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--backgroud);
+  color: var(--white);
+  font-family: "Courier New", Courier, monospace;
+}
+
+#logo img {
+  height: 50px;
+}
+#navbar {
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--backgroud);
+  border-bottom: 2px solid var(--white);
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul li {
+  margin-left: 1rem;
+}
+#navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+}
+#navbar ul li a:hover{
+  color: var(--blue);
+}
+/* trabalhar container */
+
+.container {
+  min-height: 70vh;
+  padding: 2rem;
+}
+/* footer */
+footer {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-top: 2px solid var(--white);
+}
+footer span {
+  font-weight: bold;
+  color: var(--blue);
+}
+/* MESSAGE */
+.message {
+  padding: 1rem;
+  color: var(--blue);
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 60%;
+}
+
+/*Register  */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 400px;
+}
+.hr {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 19px;
+  gap: 10px;
+}
+.hr h2 {
+  margin-top: 10px;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+.form-control input {
+  background-color: var(--backgroud);
+  border: 2px solid var(--white);
+
+  width: 468px;
+  padding: 1rem;
+}
+input:focus {
+  border-color: #068fff;
+  outline: none;
+}
+
+.form-control label {
+  font-weight: bold;
+}
+.auth-container input[type=submit] {
+  width: 154px;
+  padding: 10px;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-size: 19.5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.auth-container input[type=submit]:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+.auth-container p {
+  margin-top: 13px;
+}
+.auth-container a {
+  color: var(--blue);
+}
+
+.auth-container hr {
+  width: 6px;
+  height: 55px;
+  background-color: #068fff;
+  border: 1px solid var(--blue);
+}
+/* SUBSTITUIÇÃO para o HR
+aut-container h2::before{
+content:"" ;
+padding: 4px;
+backgrond-color:var(--blue);
+margin:0 7px 0 0;
+padding-top:55px;
+}*/
+.tought-form-container{
+display: flex;
+margin: 0 auto;
+justify-content: center;
+flex-direction: column;
+  gap: 30px;
+  width: 500px;
+}
+.Dashboard{
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin: 0 auto;
+gap: 10px;
+width: 100vh;
+}
+.title-container{
+  display: flex;
+  width:100vh;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.title-container h2::before{
+  content:"" ;
+  padding: 4px;
+  background-color:var(--blue);
+  margin:0 7px 0 0;
+  padding-top:14px;
+  }
+  .title-container a{
+    text-decoration: none;
+    width: 250px;
+    padding: 10px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    font-size: 19.5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .title-container a:hover{
+    background-color: var(--blue);
+    color: var(--white);
+  }
+
+.tought-form-container a{
+  text-decoration: none;
+
+}
+.tought-form-container h1::before{
+  content: "";
+  padding: 4px;
+  background-color: var(--blue);
+  margin: 0 7px 0 0;
+  padding-top: 14px;
+}
+.form-control label{
+font-weight: bold;
+font-size: 20px;
+}
+form input[type=submit] {
+  width: 220px;
+  padding: 10px;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-size: 19.5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+form input[type=submit]:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+/* Dashboard */
+.Dashboard ul li{
+  list-style: none;
+}
+.Dashboard span{
+  color: var(--blue);
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.Dashboard article{
+  display: flex;
+
+}
+.Dashboard{
+  padding-bottom: 8px;
+}
+.toughts{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid var(--blue);
+  padding: .5rem;
+
+}
+
+.buttons a{
+  background: none;
+  color: var(--blue);
+  text-decoration: none;
+
+}
+.buttons a:hover{
+  color: #fff;
+}
+.Dashboard li {
+  display: flex;
+gap: 30px;
+}
+
+.buttons {
+  display: flex;
+ justify-content: space-between;
+ gap: 30px;
+}
+.buttons button, .buttons input[type=submit]{
+  width: 104px;
+  padding: .5rem;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  font-size: 19.5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+.buttons input[type=submit]:hover ,.buttons button:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+/* HOME */
+.home-header{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.home-header h1{
+  margin: 1rem;
+}
+.home-header a{
+  color: var(--white);
+}
+.home-header p,
+.home-header form{
+  margin-bottom: 1rem;
+}
+.home-header input{
+  border: none;
+  border-bottom: 1px solid var(--white);
+  padding: .5rem;
+  margin-right: 1rem;
+}
+.home-header input[type=text]{
+  width: 70%;
+  font-size: 18px;
+}
+.home-header input::placeholder{
+  color: var(--white);
+}
+.home-header input::placeholder{
+  color: var(--blue);
+}
+
+.order-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto 1rem;
+}
+.order-container form{
+  margin: 0;
+}
+.order-container button{
+margin-bottom: 0;
+border: none;
+cursor: pointer;
+}
+.order-container button:hover,
+.order-container i:hover,
+.order-container a :hover{
+  color: var(--blue);
+}
+.order-container button,
+.order-container i,
+.order-container a{
+margin: 0 7px;
+}
+.toghts-container figure{
+  border-bottom:1px solid #333;
+  padding: 0.5rem;
+  max-width: 70%;
+  margin: 0 auto 1rem;
+}
+.toghts-container blockquote{
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.toghts-container span{
+  color: var(--blue);
+}
+
